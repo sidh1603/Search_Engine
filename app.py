@@ -16,6 +16,7 @@ arxiv=ArxivQueryRun(api_wrapper=arxiv_wrapper)
 api_wrapper=WikipediaAPIWrapper(top_k_results=1,doc_content_chars_max=200)
 wiki=WikipediaQueryRun(api_wrapper=api_wrapper)
 
+
 search=DuckDuckGoSearchRun(name="Search")
 
 
@@ -26,6 +27,7 @@ Try more LangChain 🤝 Streamlit Agent examples at [github.com/langchain-ai/str
 """
 
 ## Sidebar for settings
+
 st.sidebar.title("Settings")
 api_key=st.sidebar.text_input("Enter your Groq API Key:",type="password")
 
